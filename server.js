@@ -176,5 +176,5 @@ Promise.all([loadIPdatabase(), db.init()]).then(results => {
     })
     server.vpnclient = client
   })
-  httpServer.listen({host: conf.get('bind'), port: conf.get('port'), exclusive: true})
+  httpServer.listen({host: '0.0.0.0', port: conf.get('port'), exclusive: true})
 })
